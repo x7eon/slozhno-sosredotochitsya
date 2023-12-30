@@ -94,4 +94,8 @@
   .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
     border: 1px solid rgba(50 49 45 / 0.4);
   }
+
+  .page {
+    background-color: #fff1f7;
+  }
 }

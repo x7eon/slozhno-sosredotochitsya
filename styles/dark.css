@@ -73,4 +73,8 @@
     --bold: 700;
     --background-image: url(../images/cover-image-dark.png);
   }
+
+  .page {
+    background-color: #00012c;
+  }
 }
