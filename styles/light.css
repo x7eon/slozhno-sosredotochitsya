@@ -32,6 +32,10 @@
   --background-image: url(../images/cover-image-light.png);
 }
 
+.page{
+  background-color: #fff1f7;
+}
+
 .page.theme_light .decorated-zone::before {
   --accent-color: #353430;
 }
@@ -59,7 +63,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  
+
   :root {
     --main-color: #353430;
     --second-color: #353430;
