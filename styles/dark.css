@@ -31,6 +31,7 @@
   --text-large: 157px;
   --bold: 700;
   --background-image: url(../images/cover-image-dark.png);
+  background-color: #00012c;
 }
 
 .page.theme_dark .decorated-zone::before {
@@ -60,7 +61,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  
+
   :root {
     --main-color: #f1b2ce;
     --second-color: #000028;
