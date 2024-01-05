@@ -10,7 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  font-family: var(--main-font, Helvetica, Arial, sans-serif);
+  font-family: var(--main-font, 'Courier New', monospace);
   font-size: var(--text-small, 18px);
   line-height: 1.3;
 }

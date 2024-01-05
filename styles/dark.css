@@ -4,18 +4,6 @@
   переключая тему
 */
 
-:root.theme-dark {
-  --main-color: #f1b2ce;
-  --second-color: #000028;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --main-font: 'IBM Plex Mono';
-  --text-small: 18px;
-  --text-large: 157px;
-  --bold: 700;
-  --background-image: url(../images/cover-image-dark.png);
-}
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -31,50 +19,32 @@
   --text-large: 157px;
   --bold: 700;
   --background-image: url(../images/cover-image-dark.png);
-  background-color: #00012c;
+  --background-color: #00012c;
+  background-color: var(--background-color, #00012c);
 }
 
-.page.theme_dark .decorated-zone::before {
-  --accent-color: #ff0070;
-}
-
-.page.theme_dark .decorated-zone::after {
-  --accent-color: #ff0070;
-}
-
-.page.theme_dark .header__decor::before,
-.page.theme_dark .header__decor::after {
-  display: block;
-}
-
-.page.theme_dark .header__theme-menu-button {
-  --accent-color: #ff0070;
-}
-
-.page.theme_dark
-  .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-  border: 1px solid rgba(255 0 112 / 0.4);
-}
-
-.page.theme_dark .info__article-title {
-  --accent-color: #ff0070;
-}
-
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    --main-color: #f1b2ce;
-    --second-color: #000028;
-    --accent-color: #ff0070;
-    --title-color: #db00ff;
-    --main-font: 'IBM Plex Mono';
-    --text-small: 18px;
-    --text-large: 157px;
-    --bold: 700;
-    --background-image: url(../images/cover-image-dark.png);
-  }
-
-  .page {
-    background-color: #00012c;
-  }
+.page.theme_dark .decorated-zone::before { 
+  --accent-color: #ff0070; 
+} 
+ 
+.page.theme_dark .decorated-zone::after { 
+  --accent-color: #ff0070; 
+} 
+ 
+.page.theme_dark .header__decor::before, 
+.page.theme_dark .header__decor::after { 
+  display: block; 
+} 
+ 
+.page.theme_dark .header__theme-menu-button { 
+  --accent-color: #ff0070; 
+} 
+ 
+.page.theme_dark 
+  .header__theme-menu-button:not(.header__theme-menu-button_active):hover { 
+  border: 1px solid rgba(255 0 112 / 0.4); 
+} 
+ 
+.page.theme_dark .info__article-title { 
+  --accent-color: #ff0070; 
 }

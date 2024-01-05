@@ -4,18 +4,6 @@
   переключая тему
 */
 
-:root.theme-light {
-  --main-color: #353430;
-  --second-color: #353430;
-  --accent-color: #ff8dcb;
-  --title-color: #ffc2e6;
-  --main-font: 'IBM Plex Mono';
-  --text-small: 18px;
-  --text-large: 157px;
-  --bold: 700;
-  --background-image: url(../images/cover-image-light.png);
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -30,7 +18,8 @@
   --text-large: 157px;
   --bold: 700;
   --background-image: url(../images/cover-image-light.png);
-  background-color: #fff1f7;
+  --background-color: #fff1f7;
+  background-color: var(--background-color, #fff1f7);
 }
 
 .page.theme_light .decorated-zone::before {
@@ -55,7 +44,7 @@
   border: 1px solid rgba(50 49 45 / 0.4);
 }
 
-.page.theme_light .info__article-title {
+.page.theme_light .section__title {
   --accent-color: var(--second-color);
 }
 
@@ -87,7 +76,7 @@
     --accent-color: var(--second-color);
   }
 
-  .info__article-title {
+  .section__title {
     --accent-color: var(--second-color);
   }
 
@@ -96,6 +85,6 @@
   }
 
   .page {
-    background-color: #fff1f7;
+    background-color: var(--background-color,#fff1f7);
   }
 }
