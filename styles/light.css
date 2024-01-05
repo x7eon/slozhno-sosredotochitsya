@@ -60,6 +60,8 @@
     --text-large: 157px;
     --bold: 700;
     --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    background-color: var(--background-color, #fff1f7);
   }
 
   .decorated-zone::before,
