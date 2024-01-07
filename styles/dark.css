@@ -45,6 +45,7 @@
   border: 1px solid rgba(255 0 112 / 0.4);
 }
 
-.page.theme_dark .info__article-title {
+.page.theme_dark .section__title {
   --accent-color: #ff0070;
+  color: var(--accent-color, #ff0070);
 }
